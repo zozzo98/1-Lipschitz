@@ -38,6 +38,12 @@
  		
  		}
  		
+ 		public function eseguiQuery($query,$con) {
+ 			
+ 			$result = mysqli_query($con,$query);
+ 		
+ 		}
+ 		
 	}
 
 ?>
