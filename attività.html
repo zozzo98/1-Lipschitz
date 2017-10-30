@@ -35,9 +35,52 @@
         <div class="container-fluid">
           <div class="row"  id="form">
                <form>
-                   <div class="form-group">
+                    <div class="form-group">
                        <input type="text" class="form-control" id="data" name="data" placeholder="Data dd/mm/yyyy" data-provide="datepicker">
-                   </div>
+                    </div>
+                    <div class="row">
+                         <div class="form-group col-sm-6" >
+                              <select class="form-control" id="sel1">
+                                   <option disabled selected>Tipologia</option>
+                                   <option>Ricavo</option>
+                                   <option>Spesa</option>
+                              </select>
+                         </div>
+                         <div class="form-group col-sm-6" >
+                              <div class="input-group">
+                                   <input id="importo" type="text" class="form-control" name="importo" placeholder="Importo">
+                                   <span class="input-group-addon">€</span>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="form-group">
+                              <textarea class="form-control" id="descrizione" name="descrizione" placeholder="Descrizione"></textarea>
+                    </div>
+                    <div class="container">
+                         <p>L'operazione si ripete in modo regolare nel tempo?</p>
+                           <div class="radio">
+                             <label><input type="radio" name="optradio">Sì</label>
+                           </div>
+                           <div class="radio">
+                             <label><input type="radio" name="optradio">No</label>
+                           </div>
+                    </div>
+                    <div class="container">
+                         <p>Se sì, ogni quanto?</p>
+                           <div class="radio">
+                             <label><input type="radio" name="periodi">1gg</label>
+                           </div>
+                           <div class="radio">
+                             <label><input type="radio" name="periodi">7gg</label>
+                           </div>
+                           <div class="radio">
+                             <label><input type="radio" name="periodi">14gg</label>
+                           </div>
+                           <div class="radio">
+                             <label><input type="radio" name="periodi">30gg</label>
+                           </div>
+                    </div>
+                    <button type="button" class="btn btn-default btn-lg" id="submit">Invia</button>
                </form>
           </div>
         </div>
