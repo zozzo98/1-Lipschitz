@@ -1,9 +1,9 @@
 $( document ).ready(function() {
 	
-	$('.datepicker').datepicker({
+	$('#data').datepicker({
 	
 		format: 'mm/dd/yyyy',
-		autoclose: True
+		autoclose: true
 	
 	});
 
