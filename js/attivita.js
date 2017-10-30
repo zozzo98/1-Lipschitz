@@ -30,8 +30,17 @@ $( document ).ready(function() {
 	});
 	
 	$( "#submit" ).click(function() {
-  	
-  		$.post( "test.php", { 
+  		
+  		var page = "call/spesa.php";
+  		
+  		if ($("#tipologia").val() == "ricavo"){
+  			
+  			page = "call/ricavo.php";	
+  			
+  		}
+  			
+  		
+  		$.post( page, { 
 	
 			data: $("#data").val(), 
 			tipologia: $("#tipologia").val(), 
